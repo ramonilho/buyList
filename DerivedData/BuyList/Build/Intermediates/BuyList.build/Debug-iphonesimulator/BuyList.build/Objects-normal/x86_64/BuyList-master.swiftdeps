@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "e7ffa7960a464f3e8b336bbf18ce86ae"
+build_time: [560048954, 171847000]
+inputs:
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/AppDelegate.swift": [560046664, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BuyListViewController.swift": [560048465, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/CreateProductViewController.swift": [560048759, 0]

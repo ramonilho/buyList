@@ -1,0 +1,15 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "db814a61e45cd762b2fc270e6c29f030"
+build_time: [1507473501, 162715000]
+inputs:
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/Validate.swift": [1507469204, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/AppDelegate.swift": [1506731464, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/StateMO.swift": [1507336376, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BuyListViewController.swift": [1507409418, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/ProductTableViewCell.swift": [1507337877, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/SettingsViewController.swift": [1507473311, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BaseViewController.swift": [1507473266, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BuyTabBarViewController.swift": [1507166079, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/CreateProductViewController.swift": [1507473500, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/TotalViewController.swift": [1507338188, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/ProductMO.swift": [1507337744, 0]

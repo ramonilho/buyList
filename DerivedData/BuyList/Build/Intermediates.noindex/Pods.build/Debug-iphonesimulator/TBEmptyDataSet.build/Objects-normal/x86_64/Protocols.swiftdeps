@@ -1,0 +1,89 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TBEmptyDataSetDataSource"
+- "TBEmptyDataSetDelegate"
+provides-nominal:
+- "14TBEmptyDataSet0abcB6SourceP"
+- "14TBEmptyDataSet0abC8DelegateP"
+provides-member:
+- ["14TBEmptyDataSet0abcB6SourceP", ""]
+- ["14TBEmptyDataSet0abC8DelegateP", ""]
+- ["14TBEmptyDataSet0abcB6SourceP", "imageForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "titleForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "descriptionForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "imageTintColorForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "backgroundColorForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "verticalOffsetForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "verticalSpacesForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "customViewForEmptyDataSet"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetShouldDisplay"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetTapEnabled"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetScrollEnabled"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetDidTapEmptyView"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetWillAppear"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetDidAppear"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetWillDisappear"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetDidDisappear"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "DefaultValues"
+- "NSAttributedString"
+- "TBEmptyDataSetDataSource"
+- "TBEmptyDataSetDelegate"
+- "UIColor"
+- "UIImage"
+- "UIScrollView"
+- "UIView"
+depends-member:
+- !private ["14TBEmptyDataSet13DefaultValuesV", "verticalOffset"]
+- !private ["14TBEmptyDataSet13DefaultValuesV", "verticalSpaces"]
+- ["14TBEmptyDataSet0abcB6SourceP", "CGFloat"]
+- !private ["14TBEmptyDataSet0abcB6SourceP", "DefaultValues"]
+- ["14TBEmptyDataSet0abcB6SourceP", "NSAttributedString"]
+- ["14TBEmptyDataSet0abcB6SourceP", "UIColor"]
+- ["14TBEmptyDataSet0abcB6SourceP", "UIImage"]
+- ["14TBEmptyDataSet0abcB6SourceP", "UIScrollView"]
+- ["14TBEmptyDataSet0abcB6SourceP", "UIView"]
+- ["14TBEmptyDataSet0abcB6SourceP", "backgroundColorForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "customViewForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "descriptionForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "imageForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "imageTintColorForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "titleForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "verticalOffsetForEmptyDataSet"]
+- ["14TBEmptyDataSet0abcB6SourceP", "verticalSpacesForEmptyDataSet"]
+- ["14TBEmptyDataSet0abC8DelegateP", "Bool"]
+- ["14TBEmptyDataSet0abC8DelegateP", "UIScrollView"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetDidAppear"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetDidDisappear"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetDidTapEmptyView"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetScrollEnabled"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetShouldDisplay"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetTapEnabled"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetWillAppear"]
+- ["14TBEmptyDataSet0abC8DelegateP", "emptyDataSetWillDisappear"]
+depends-nominal:
+- !private "14TBEmptyDataSet13DefaultValuesV"
+- "14TBEmptyDataSet0abcB6SourceP"
+- "14TBEmptyDataSet0abC8DelegateP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/Target Support Files/TBEmptyDataSet/TBEmptyDataSet-umbrella.h"
+- "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/BuyList/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/TBEmptyDataSet.build/unextended-module.modulemap"
+interface-hash: "648bea7855f1b3e23ec0c25b31848549"

@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "3a7e6f162873370a4b814ead4943b134"
+build_time: [1507477721, 167352000]
+inputs:
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/EmptyDataSet-Swift/EmptyDataSet-Swift/EmptyDataSet/EmptyDataSet.swift": [1507337383, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/EmptyDataSet-Swift/EmptyDataSet-Swift/EmptyDataSet/EmptyDataSetDelegate.swift": [1507337383, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/EmptyDataSet-Swift/EmptyDataSet-Swift/EmptyDataSet/EmptyDataSetSource.swift": [1507337383, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/EmptyDataSet-Swift/EmptyDataSet-Swift/EmptyDataSet/EmptyDataSetView+Extension.swift": [1507337383, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/EmptyDataSet-Swift/EmptyDataSet-Swift/EmptyDataSet/EmptyDataSetView.swift": [1507337383, 0]

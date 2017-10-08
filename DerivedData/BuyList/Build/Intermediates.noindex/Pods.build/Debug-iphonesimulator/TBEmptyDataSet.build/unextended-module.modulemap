@@ -1,0 +1,10 @@
+framework module TBEmptyDataSet {
+  umbrella header "TBEmptyDataSet-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TBEmptyDataSet.__Swift {
+    exclude header "TBEmptyDataSet-Swift.h"
+}

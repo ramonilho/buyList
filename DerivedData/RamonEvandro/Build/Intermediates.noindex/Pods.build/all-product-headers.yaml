@@ -1,0 +1,60 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "EmptyDataSet-Swift-umbrella.h",
+          'external-contents': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/Target Support Files/EmptyDataSet-Swift/EmptyDataSet-Swift-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "EmptyDataSet_Swift-Swift.h",
+          'external-contents': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers/EmptyDataSet_Swift-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/EmptyDataSet-Swift.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/Pods_ComprasUSA.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-ComprasUSA-umbrella.h",
+          'external-contents': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/Pods/Target Support Files/Pods-ComprasUSA/Pods-ComprasUSA-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_ComprasUSA-Swift.h",
+          'external-contents': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/Pods_ComprasUSA.framework/Headers/Pods_ComprasUSA-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/Pods_ComprasUSA.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-ComprasUSA.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

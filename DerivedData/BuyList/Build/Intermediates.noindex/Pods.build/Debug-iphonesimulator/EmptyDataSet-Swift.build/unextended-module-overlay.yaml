@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/BuyList/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/BuyList/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/EmptyDataSet-Swift.build/unextended-module.modulemap',
+    }]
+  }]
+}
