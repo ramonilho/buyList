@@ -18,12 +18,14 @@ class CreateProductViewController: BaseViewController {
     @IBOutlet weak var tfState: UITextField!
     @IBOutlet weak var tfValue: UITextField!
     @IBOutlet weak var swCard: UISwitch!
+    @IBOutlet weak var btProduct: UIButton!
     
+    var viewType: ProductViewType! = .create
     var imagePicker: UIImagePickerController!
     var pickerView: UIPickerView!
     var fetchedStatesController: NSFetchedResultsController<State>!
-    
     var states: [State] = [State]()
+    var product: Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,10 @@ class CreateProductViewController: BaseViewController {
         
         loadStates()
         setupPickerView()
+        
+        if viewType == .edit {
+            setupFields()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +79,21 @@ class CreateProductViewController: BaseViewController {
             return
         }
         tfState.text = states[pickerView.selectedRow(inComponent: 0)].name ?? ""
+    }
+    
+    func setupFields() {
+        guard let product = product else {
+            return
+        }
+        tfName.text = product.name!
+        tfState.text = product.state!.name!
+        tfValue.text = "\(product.value)"
+        ivPicture.image = UIImage(data: product.image! as Data)
+        ivPicture.contentMode = .scaleAspectFit
+        swCard.isOn = product.usedCard
+        
+        title = "Editar produto"
+        btProduct.setTitle("S A L V A R", for: .normal)
     }
     
     func getPicture() {
@@ -122,7 +143,13 @@ class CreateProductViewController: BaseViewController {
             return (false, nil)
         }
         
-        let product = Product(context: context)
+        var product: Product!
+        
+        if viewType == .create {
+            product = Product(context: context)
+        } else {
+            product = self.product
+        }
         
         product.name = name
         product.state = states[pickerView.selectedRow(inComponent: 0)]

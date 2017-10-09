@@ -1,18 +1,18 @@
 version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
 options: "a7ddffc3a6590a89ccfe20048dae0c94"
-build_time: [1507502207, 987553000]
+build_time: [1507507498, 846056000]
 inputs:
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/Ext+UIApplication.swift": [1507498206, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/Validate.swift": [1507469204, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/AppDelegate.swift": [1507495006, 0]
-  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BuyListViewController.swift": [1507501952, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BuyListViewController.swift": [1507503772, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/ProductTableViewCell.swift": [1507501704, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/SettingsViewController.swift": [1507498406, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BaseViewController.swift": [1507498678, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/Ext+UIViewController.swift": [1507493936, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/BuyTabBarViewController.swift": [1507166079, 0]
-  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/CreateProductViewController.swift": [1507502207, 0]
-  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/TotalViewController.swift": [1507338188, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/CreateProductViewController.swift": [1507504992, 0]
+  "/Users/ramonhonorio/workspace/ios/fiap/BuyList/BuyList/TotalViewController.swift": [1507507498, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Intermediates.noindex/RamonEvandro.build/Debug-iphonesimulator/ComprasUSA.build/DerivedSources/CoreDataGenerated/BuyList/Product+CoreDataClass.swift": [1507497055, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Intermediates.noindex/RamonEvandro.build/Debug-iphonesimulator/ComprasUSA.build/DerivedSources/CoreDataGenerated/BuyList/Product+CoreDataProperties.swift": [1507497055, 0]
   "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Intermediates.noindex/RamonEvandro.build/Debug-iphonesimulator/ComprasUSA.build/DerivedSources/CoreDataGenerated/BuyList/State+CoreDataClass.swift": [1507497055, 0]

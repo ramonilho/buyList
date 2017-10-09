@@ -886,6 +886,7 @@ depends-member:
 - ["So34NSFetchedResultsControllerDelegateP", "scrollViewWillEndDragging"]
 - ["So34NSFetchedResultsControllerDelegateP", "sectionIndexTitles"]
 - ["So34NSFetchedResultsControllerDelegateP", "sectionIndexTitlesForTableView"]
+- !private ["So34NSFetchedResultsControllerDelegateP", "setupPickerView"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "setupSettingsBundle"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "setupViews"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "showSimpleAlert"]

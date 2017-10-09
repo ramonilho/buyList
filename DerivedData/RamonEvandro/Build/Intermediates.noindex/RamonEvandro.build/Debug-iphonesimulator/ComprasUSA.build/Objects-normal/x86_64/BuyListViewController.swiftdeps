@@ -1,9 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ProductViewType"
 - "BuyListViewController"
 provides-nominal:
+- "10ComprasUSA15ProductViewTypeO"
 - "10ComprasUSA21BuyListViewControllerC"
 provides-member:
+- ["10ComprasUSA15ProductViewTypeO", ""]
 - ["10ComprasUSA21BuyListViewControllerC", ""]
 provides-dynamic-lookup:
 - "addProduct"
@@ -11,12 +14,13 @@ provides-dynamic-lookup:
 - "controllerDidChangeContent"
 - "fetchedProductsController"
 - "loadProducts"
+- "prepare"
 - "products"
 - "tableView"
 - "viewDidLoad"
 - "viewWillAppear"
 depends-top-level:
-- !private "=="
+- "=="
 - !private "Array"
 - "AssignmentPrecedence"
 - "BaseViewController"
@@ -24,6 +28,7 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - "BuyListViewController"
 - "CastingPrecedence"
+- !private "CreateProductViewController"
 - "IndexPath"
 - "Int"
 - !private "NSFetchRequest"
@@ -33,8 +38,10 @@ depends-top-level:
 - !private "NSSortDescriptor"
 - "Product"
 - !private "ProductTableViewCell"
+- "ProductViewType"
 - !private "StringLiteralType"
 - "UIBarButtonItem"
+- "UIStoryboardSegue"
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewCellEditingStyle"
@@ -46,6 +53,7 @@ depends-member:
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - ["10ComprasUSA18BaseViewControllerC", "Bool"]
+- !private ["10ComprasUSA18BaseViewControllerC", "CreateProductViewController"]
 - ["10ComprasUSA18BaseViewControllerC", "IndexPath"]
 - ["10ComprasUSA18BaseViewControllerC", "Int"]
 - !private ["10ComprasUSA18BaseViewControllerC", "NSFetchRequest"]
@@ -54,7 +62,9 @@ depends-member:
 - !private ["10ComprasUSA18BaseViewControllerC", "NSSortDescriptor"]
 - ["10ComprasUSA18BaseViewControllerC", "Product"]
 - !private ["10ComprasUSA18BaseViewControllerC", "ProductTableViewCell"]
+- ["10ComprasUSA18BaseViewControllerC", "ProductViewType"]
 - ["10ComprasUSA18BaseViewControllerC", "UIBarButtonItem"]
+- ["10ComprasUSA18BaseViewControllerC", "UIStoryboardSegue"]
 - ["10ComprasUSA18BaseViewControllerC", "UITableView"]
 - ["10ComprasUSA18BaseViewControllerC", "UITableViewCell"]
 - ["10ComprasUSA18BaseViewControllerC", "UITableViewCellEditingStyle"]
@@ -65,6 +75,7 @@ depends-member:
 - ["10ComprasUSA18BaseViewControllerC", "controllerDidChangeContent"]
 - ["10ComprasUSA18BaseViewControllerC", "controllerWillChangeContent"]
 - ["10ComprasUSA18BaseViewControllerC", "fetchedProductsController"]
+- ["10ComprasUSA18BaseViewControllerC", "goToProductAs"]
 - ["10ComprasUSA18BaseViewControllerC", "indexPathForPreferredFocusedView"]
 - ["10ComprasUSA18BaseViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["10ComprasUSA18BaseViewControllerC", "init"]
@@ -74,7 +85,9 @@ depends-member:
 - ["10ComprasUSA18BaseViewControllerC", "numberOfSections"]
 - ["10ComprasUSA18BaseViewControllerC", "numberOfSectionsInTableView"]
 - !private ["10ComprasUSA18BaseViewControllerC", "performSegue"]
+- ["10ComprasUSA18BaseViewControllerC", "prepare"]
 - !private ["10ComprasUSA18BaseViewControllerC", "print"]
+- !private ["10ComprasUSA18BaseViewControllerC", "product"]
 - ["10ComprasUSA18BaseViewControllerC", "products"]
 - ["10ComprasUSA18BaseViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["10ComprasUSA18BaseViewControllerC", "scrollViewDidEndDecelerating"]
@@ -95,14 +108,17 @@ depends-member:
 - ["10ComprasUSA18BaseViewControllerC", "viewDidLoad"]
 - ["10ComprasUSA18BaseViewControllerC", "viewForZooming"]
 - ["10ComprasUSA18BaseViewControllerC", "viewForZoomingInScrollView"]
+- !private ["10ComprasUSA18BaseViewControllerC", "viewType"]
 - ["10ComprasUSA18BaseViewControllerC", "viewWillAppear"]
 - ["10ComprasUSA18BaseViewControllerC", ""]
 - !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "row"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["10ComprasUSA21BuyListViewControllerC", "Bool"]
+- !private ["10ComprasUSA21BuyListViewControllerC", "CreateProductViewController"]
 - ["10ComprasUSA21BuyListViewControllerC", "IndexPath"]
 - ["10ComprasUSA21BuyListViewControllerC", "Int"]
 - !private ["10ComprasUSA21BuyListViewControllerC", "NSFetchRequest"]
@@ -111,7 +127,9 @@ depends-member:
 - !private ["10ComprasUSA21BuyListViewControllerC", "NSSortDescriptor"]
 - ["10ComprasUSA21BuyListViewControllerC", "Product"]
 - !private ["10ComprasUSA21BuyListViewControllerC", "ProductTableViewCell"]
+- ["10ComprasUSA21BuyListViewControllerC", "ProductViewType"]
 - ["10ComprasUSA21BuyListViewControllerC", "UIBarButtonItem"]
+- ["10ComprasUSA21BuyListViewControllerC", "UIStoryboardSegue"]
 - ["10ComprasUSA21BuyListViewControllerC", "UITableView"]
 - ["10ComprasUSA21BuyListViewControllerC", "UITableViewCell"]
 - ["10ComprasUSA21BuyListViewControllerC", "UITableViewCellEditingStyle"]
@@ -123,6 +141,7 @@ depends-member:
 - ["10ComprasUSA21BuyListViewControllerC", "controllerWillChangeContent"]
 - ["10ComprasUSA21BuyListViewControllerC", "deinit"]
 - ["10ComprasUSA21BuyListViewControllerC", "fetchedProductsController"]
+- ["10ComprasUSA21BuyListViewControllerC", "goToProductAs"]
 - ["10ComprasUSA21BuyListViewControllerC", "indexPathForPreferredFocusedView"]
 - ["10ComprasUSA21BuyListViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["10ComprasUSA21BuyListViewControllerC", "init"]
@@ -132,6 +151,7 @@ depends-member:
 - ["10ComprasUSA21BuyListViewControllerC", "numberOfSections"]
 - ["10ComprasUSA21BuyListViewControllerC", "numberOfSectionsInTableView"]
 - !private ["10ComprasUSA21BuyListViewControllerC", "performSegue"]
+- ["10ComprasUSA21BuyListViewControllerC", "prepare"]
 - !private ["10ComprasUSA21BuyListViewControllerC", "print"]
 - ["10ComprasUSA21BuyListViewControllerC", "products"]
 - ["10ComprasUSA21BuyListViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
@@ -155,6 +175,7 @@ depends-member:
 - ["10ComprasUSA21BuyListViewControllerC", "viewForZoomingInScrollView"]
 - ["10ComprasUSA21BuyListViewControllerC", "viewWillAppear"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "deselectRow"]
 - !private ["So15CALayerDelegateP", "emptyDataSetDelegate"]
 - !private ["So15CALayerDelegateP", "emptyDataSetSource"]
 - !private ["So15CALayerDelegateP", "reloadData"]
@@ -172,11 +193,14 @@ depends-member:
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "deselectRow"]
+- !private ["s7CVarArgP", "destination"]
 - !private ["s7CVarArgP", "emptyDataSetDelegate"]
 - !private ["s7CVarArgP", "emptyDataSetSource"]
 - !private ["s7CVarArgP", "fetchRequest"]
 - !private ["s7CVarArgP", "fetchedObjects"]
 - !private ["s7CVarArgP", "fetchedProductsController"]
+- !private ["s7CVarArgP", "hashValue"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s7CVarArgP", "init"]
@@ -190,6 +214,7 @@ depends-member:
 - !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "product"]
 - !private ["s7CVarArgP", "products"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "rightBarButtonItem"]
@@ -216,14 +241,18 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
+- !private ["s7CVarArgP", "viewType"]
 - !private ["s7CVarArgP", "viewWillAppear"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "row"]
 - !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "hashValue"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "row"]
+- !private ["10ComprasUSA27CreateProductViewControllerC", "product"]
+- !private ["10ComprasUSA27CreateProductViewControllerC", "viewType"]
 - !private ["s28CustomDebugStringConvertibleP", "NSFetchedResultsController"]
 - !private ["s28CustomDebugStringConvertibleP", "NSSortDescriptor"]
 - ["s28CustomDebugStringConvertibleP", "Product"]
@@ -234,9 +263,13 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "controllerDidChangeContent"]
 - ["s28CustomDebugStringConvertibleP", "controllerWillChangeContent"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "create"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "deselectRow"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "edit"]
 - !private ["s28CustomDebugStringConvertibleP", "emptyDataSetDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "emptyDataSetSource"]
 - !private ["s28CustomDebugStringConvertibleP", "fetchRequest"]
@@ -255,6 +288,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "product"]
 - !private ["s28CustomDebugStringConvertibleP", "products"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItem"]
@@ -282,12 +316,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["s28CustomDebugStringConvertibleP", "viewType"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "hashValue"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -302,14 +339,19 @@ depends-member:
 - ["s23CustomStringConvertibleP", "controllerDidChangeContent"]
 - ["s23CustomStringConvertibleP", "controllerWillChangeContent"]
 - !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "create"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "deselectRow"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "edit"]
 - !private ["s23CustomStringConvertibleP", "emptyDataSetDelegate"]
 - !private ["s23CustomStringConvertibleP", "emptyDataSetSource"]
 - !private ["s23CustomStringConvertibleP", "fetchRequest"]
 - !private ["s23CustomStringConvertibleP", "fetchedObjects"]
 - !private ["s23CustomStringConvertibleP", "fetchedProductsController"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - ["s23CustomStringConvertibleP", "init"]
@@ -323,6 +365,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "product"]
 - !private ["s23CustomStringConvertibleP", "products"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "rightBarButtonItem"]
@@ -350,10 +393,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
+- !private ["s23CustomStringConvertibleP", "viewType"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "hashValue"]
 - ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "row"]
 - !private ["s9DecodableP", "subscript"]
@@ -377,6 +422,7 @@ depends-member:
 - ["18EmptyDataSet_Swift0abC8DelegateP", "numberOfSectionsInTableView"]
 - !private ["18EmptyDataSet_Swift0abC8DelegateP", "performSegue"]
 - !private ["18EmptyDataSet_Swift0abC8DelegateP", "print"]
+- !private ["18EmptyDataSet_Swift0abC8DelegateP", "product"]
 - !private ["18EmptyDataSet_Swift0abC8DelegateP", "products"]
 - ["18EmptyDataSet_Swift0abC8DelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["18EmptyDataSet_Swift0abC8DelegateP", "scrollViewDidEndDecelerating"]
@@ -397,6 +443,7 @@ depends-member:
 - !private ["18EmptyDataSet_Swift0abC8DelegateP", "viewDidLoad"]
 - ["18EmptyDataSet_Swift0abC8DelegateP", "viewForZooming"]
 - ["18EmptyDataSet_Swift0abC8DelegateP", "viewForZoomingInScrollView"]
+- !private ["18EmptyDataSet_Swift0abC8DelegateP", "viewType"]
 - !private ["18EmptyDataSet_Swift0abC8DelegateP", "viewWillAppear"]
 - ["18EmptyDataSet_Swift0abC8DelegateP", ""]
 - !private ["18EmptyDataSet_Swift0abC6SourceP", "NSFetchedResultsController"]
@@ -419,6 +466,7 @@ depends-member:
 - ["18EmptyDataSet_Swift0abC6SourceP", "numberOfSectionsInTableView"]
 - !private ["18EmptyDataSet_Swift0abC6SourceP", "performSegue"]
 - !private ["18EmptyDataSet_Swift0abC6SourceP", "print"]
+- !private ["18EmptyDataSet_Swift0abC6SourceP", "product"]
 - !private ["18EmptyDataSet_Swift0abC6SourceP", "products"]
 - ["18EmptyDataSet_Swift0abC6SourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["18EmptyDataSet_Swift0abC6SourceP", "scrollViewDidEndDecelerating"]
@@ -439,10 +487,12 @@ depends-member:
 - !private ["18EmptyDataSet_Swift0abC6SourceP", "viewDidLoad"]
 - ["18EmptyDataSet_Swift0abC6SourceP", "viewForZooming"]
 - ["18EmptyDataSet_Swift0abC6SourceP", "viewForZoomingInScrollView"]
+- !private ["18EmptyDataSet_Swift0abC6SourceP", "viewType"]
 - !private ["18EmptyDataSet_Swift0abC6SourceP", "viewWillAppear"]
 - ["18EmptyDataSet_Swift0abC6SourceP", ""]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "hashValue"]
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "row"]
 - !private ["s9EncodableP", "subscript"]
@@ -457,14 +507,19 @@ depends-member:
 - ["s9EquatableP", "controller"]
 - ["s9EquatableP", "controllerDidChangeContent"]
 - ["s9EquatableP", "controllerWillChangeContent"]
+- ["s9EquatableP", "create"]
 - !private ["s9EquatableP", "delegate"]
 - !private ["s9EquatableP", "delete"]
 - !private ["s9EquatableP", "dequeueReusableCell"]
+- !private ["s9EquatableP", "deselectRow"]
+- !private ["s9EquatableP", "destination"]
+- !private ["s9EquatableP", "edit"]
 - !private ["s9EquatableP", "emptyDataSetDelegate"]
 - !private ["s9EquatableP", "emptyDataSetSource"]
 - !private ["s9EquatableP", "fetchRequest"]
 - !private ["s9EquatableP", "fetchedObjects"]
 - !private ["s9EquatableP", "fetchedProductsController"]
+- ["s9EquatableP", "hashValue"]
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s9EquatableP", "init"]
@@ -478,6 +533,7 @@ depends-member:
 - !private ["s9EquatableP", "performSegue"]
 - !private ["s9EquatableP", "popViewController"]
 - !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "product"]
 - !private ["s9EquatableP", "products"]
 - !private ["s9EquatableP", "reloadData"]
 - !private ["s9EquatableP", "rightBarButtonItem"]
@@ -504,6 +560,7 @@ depends-member:
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
+- !private ["s9EquatableP", "viewType"]
 - !private ["s9EquatableP", "viewWillAppear"]
 - ["s9EquatableP", ""]
 - !private ["s5ErrorP", "localizedDescription"]
@@ -513,8 +570,12 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s23ExpressibleByNilLiteralP", "create"]
+- !private ["s23ExpressibleByNilLiteralP", "edit"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["s8HashableP", "NSFetchedResultsController"]
 - !private ["s8HashableP", "NSSortDescriptor"]
 - ["s8HashableP", "Product"]
@@ -526,14 +587,19 @@ depends-member:
 - ["s8HashableP", "controller"]
 - ["s8HashableP", "controllerDidChangeContent"]
 - ["s8HashableP", "controllerWillChangeContent"]
+- ["s8HashableP", "create"]
 - !private ["s8HashableP", "delegate"]
 - !private ["s8HashableP", "delete"]
 - !private ["s8HashableP", "dequeueReusableCell"]
+- !private ["s8HashableP", "deselectRow"]
+- !private ["s8HashableP", "destination"]
+- !private ["s8HashableP", "edit"]
 - !private ["s8HashableP", "emptyDataSetDelegate"]
 - !private ["s8HashableP", "emptyDataSetSource"]
 - !private ["s8HashableP", "fetchRequest"]
 - !private ["s8HashableP", "fetchedObjects"]
 - !private ["s8HashableP", "fetchedProductsController"]
+- ["s8HashableP", "hashValue"]
 - ["s8HashableP", "indexPathForPreferredFocusedView"]
 - ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s8HashableP", "init"]
@@ -547,6 +613,7 @@ depends-member:
 - !private ["s8HashableP", "performSegue"]
 - !private ["s8HashableP", "popViewController"]
 - !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "product"]
 - !private ["s8HashableP", "products"]
 - !private ["s8HashableP", "reloadData"]
 - !private ["s8HashableP", "rightBarButtonItem"]
@@ -573,11 +640,17 @@ depends-member:
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
+- !private ["s8HashableP", "viewType"]
 - !private ["s8HashableP", "viewWillAppear"]
 - ["s8HashableP", ""]
+- !private ["SQ", "create"]
+- !private ["SQ", "edit"]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "hashValue"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "count"]
 - ["s17MutableCollectionP", "init"]
@@ -594,6 +667,7 @@ depends-member:
 - ["So8NSCodingP", "controllerWillChangeContent"]
 - !private ["So8NSCodingP", "delete"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
+- !private ["So8NSCodingP", "deselectRow"]
 - !private ["So8NSCodingP", "emptyDataSetDelegate"]
 - !private ["So8NSCodingP", "emptyDataSetSource"]
 - !private ["So8NSCodingP", "fetchedProductsController"]
@@ -608,6 +682,7 @@ depends-member:
 - !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "product"]
 - !private ["So8NSCodingP", "products"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "rightBarButtonItem"]
@@ -633,6 +708,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
+- !private ["So8NSCodingP", "viewType"]
 - !private ["So8NSCodingP", "viewWillAppear"]
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "init"]
@@ -658,6 +734,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - !private ["So26NSExtensionRequestHandlingP", "popViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "product"]
 - !private ["So26NSExtensionRequestHandlingP", "products"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
@@ -678,6 +755,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
+- !private ["So26NSExtensionRequestHandlingP", "viewType"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So14NSFetchRequestC", "sortDescriptors"]
@@ -706,6 +784,7 @@ depends-member:
 - ["So34NSFetchedResultsControllerDelegateP", "numberOfSectionsInTableView"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "performSegue"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "print"]
+- !private ["So34NSFetchedResultsControllerDelegateP", "product"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "products"]
 - ["So34NSFetchedResultsControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So34NSFetchedResultsControllerDelegateP", "scrollViewDidEndDecelerating"]
@@ -725,6 +804,7 @@ depends-member:
 - ["So34NSFetchedResultsControllerDelegateP", "tableView"]
 - ["So34NSFetchedResultsControllerDelegateP", "viewForZooming"]
 - ["So34NSFetchedResultsControllerDelegateP", "viewForZoomingInScrollView"]
+- !private ["So34NSFetchedResultsControllerDelegateP", "viewType"]
 - ["So34NSFetchedResultsControllerDelegateP", ""]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
@@ -735,6 +815,7 @@ depends-member:
 - !private ["So22NSManagedObjectContextC", "save"]
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CreateProductViewController"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSFetchRequest"]
@@ -743,7 +824,9 @@ depends-member:
 - !private ["So8NSObjectC", "NSSortDescriptor"]
 - ["So8NSObjectC", "Product"]
 - !private ["So8NSObjectC", "ProductTableViewCell"]
+- ["So8NSObjectC", "ProductViewType"]
 - ["So8NSObjectC", "UIBarButtonItem"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - ["So8NSObjectC", "UITableViewCellEditingStyle"]
@@ -756,11 +839,14 @@ depends-member:
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "delete"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
+- !private ["So8NSObjectC", "deselectRow"]
+- !private ["So8NSObjectC", "destination"]
 - !private ["So8NSObjectC", "emptyDataSetDelegate"]
 - !private ["So8NSObjectC", "emptyDataSetSource"]
 - !private ["So8NSObjectC", "fetchRequest"]
 - !private ["So8NSObjectC", "fetchedObjects"]
 - ["So8NSObjectC", "fetchedProductsController"]
+- ["So8NSObjectC", "goToProductAs"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
@@ -773,7 +859,9 @@ depends-member:
 - !private ["So8NSObjectC", "performFetch"]
 - !private ["So8NSObjectC", "performSegue"]
 - !private ["So8NSObjectC", "popViewController"]
+- ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "product"]
 - ["So8NSObjectC", "products"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "rightBarButtonItem"]
@@ -799,6 +887,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So8NSObjectC", "viewType"]
 - ["So8NSObjectC", "viewWillAppear"]
 - !private ["So16NSObjectProtocolP", "NSFetchedResultsController"]
 - !private ["So16NSObjectProtocolP", "NSSortDescriptor"]
@@ -812,6 +901,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "delegate"]
 - !private ["So16NSObjectProtocolP", "delete"]
 - !private ["So16NSObjectProtocolP", "dequeueReusableCell"]
+- !private ["So16NSObjectProtocolP", "deselectRow"]
+- !private ["So16NSObjectProtocolP", "destination"]
 - !private ["So16NSObjectProtocolP", "emptyDataSetDelegate"]
 - !private ["So16NSObjectProtocolP", "emptyDataSetSource"]
 - !private ["So16NSObjectProtocolP", "fetchRequest"]
@@ -830,6 +921,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "performSegue"]
 - !private ["So16NSObjectProtocolP", "popViewController"]
 - !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "product"]
 - !private ["So16NSObjectProtocolP", "products"]
 - !private ["So16NSObjectProtocolP", "reloadData"]
 - !private ["So16NSObjectProtocolP", "rightBarButtonItem"]
@@ -855,15 +947,22 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
+- !private ["So16NSObjectProtocolP", "viewType"]
 - !private ["So16NSObjectProtocolP", "viewWillAppear"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So24NSPersistentStoreRequestC", "sortDescriptors"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So16NSSortDescriptorC", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "hashValue"]
 - ["10ComprasUSA7ProductC", "deinit"]
 - !private ["10ComprasUSA7ProductC", "fetchRequest"]
 - !private ["10ComprasUSA20ProductTableViewCellC", "setup"]
+- ["10ComprasUSA15ProductViewTypeO", "__derived_enum_equals"]
+- ["10ComprasUSA15ProductViewTypeO", "create"]
+- ["10ComprasUSA15ProductViewTypeO", "deinit"]
+- ["10ComprasUSA15ProductViewTypeO", "edit"]
+- ["10ComprasUSA15ProductViewTypeO", "hashValue"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "row"]
@@ -878,17 +977,22 @@ depends-member:
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "deselectRow"]
 - !private ["So29UIAccessibilityIdentificationP", "emptyDataSetDelegate"]
 - !private ["So29UIAccessibilityIdentificationP", "emptyDataSetSource"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "setup"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "deselectRow"]
 - !private ["So12UIAppearanceP", "emptyDataSetDelegate"]
 - !private ["So12UIAppearanceP", "emptyDataSetSource"]
 - !private ["So12UIAppearanceP", "init"]
@@ -904,6 +1008,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "controllerDidChangeContent"]
 - ["So21UIAppearanceContainerP", "controllerWillChangeContent"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
+- !private ["So21UIAppearanceContainerP", "deselectRow"]
 - !private ["So21UIAppearanceContainerP", "emptyDataSetDelegate"]
 - !private ["So21UIAppearanceContainerP", "emptyDataSetSource"]
 - !private ["So21UIAppearanceContainerP", "fetchedProductsController"]
@@ -918,6 +1023,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "popViewController"]
 - !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "product"]
 - !private ["So21UIAppearanceContainerP", "products"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
@@ -940,6 +1046,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
+- !private ["So21UIAppearanceContainerP", "viewType"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So15UIBarButtonItemC", "init"]
@@ -966,6 +1073,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "performSegue"]
 - !private ["So18UIContentContainerP", "popViewController"]
 - !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "product"]
 - !private ["So18UIContentContainerP", "products"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
@@ -986,18 +1094,22 @@ depends-member:
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
+- !private ["So18UIContentContainerP", "viewType"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
 - ["So18UIContentContainerP", ""]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "deselectRow"]
 - !private ["So17UICoordinateSpaceP", "emptyDataSetDelegate"]
 - !private ["So17UICoordinateSpaceP", "emptyDataSetSource"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
 - !private ["So17UICoordinateSpaceP", "setup"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "deselectRow"]
 - !private ["So23UIDataSourceTranslatingP", "emptyDataSetDelegate"]
 - !private ["So23UIDataSourceTranslatingP", "emptyDataSetSource"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "deselectRow"]
 - !private ["So13UIDynamicItemP", "emptyDataSetDelegate"]
 - !private ["So13UIDynamicItemP", "emptyDataSetSource"]
 - !private ["So13UIDynamicItemP", "reloadData"]
@@ -1012,6 +1124,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "controllerDidChangeContent"]
 - ["So18UIFocusEnvironmentP", "controllerWillChangeContent"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UIFocusEnvironmentP", "deselectRow"]
 - !private ["So18UIFocusEnvironmentP", "emptyDataSetDelegate"]
 - !private ["So18UIFocusEnvironmentP", "emptyDataSetSource"]
 - !private ["So18UIFocusEnvironmentP", "fetchedProductsController"]
@@ -1026,6 +1139,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "popViewController"]
 - !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "product"]
 - !private ["So18UIFocusEnvironmentP", "products"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1048,19 +1162,26 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So18UIFocusEnvironmentP", "viewType"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "deselectRow"]
 - !private ["So11UIFocusItemP", "emptyDataSetDelegate"]
 - !private ["So11UIFocusItemP", "emptyDataSetSource"]
 - !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So11UIFocusItemP", "setup"]
 - !private ["So27UIGestureRecognizerDelegateP", "dequeueReusableCell"]
+- !private ["So27UIGestureRecognizerDelegateP", "deselectRow"]
 - !private ["So27UIGestureRecognizerDelegateP", "emptyDataSetDelegate"]
 - !private ["So27UIGestureRecognizerDelegateP", "emptyDataSetSource"]
 - !private ["So27UIGestureRecognizerDelegateP", "reloadData"]
 - !private ["So27UIGestureRecognizerDelegateP", "setup"]
+- !private ["So31UIImagePickerControllerDelegateP", "product"]
+- !private ["So31UIImagePickerControllerDelegateP", "viewType"]
 - !private ["So22UINavigationControllerC", "popViewController"]
+- !private ["So30UINavigationControllerDelegateP", "product"]
+- !private ["So30UINavigationControllerDelegateP", "viewType"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSFetchedResultsController"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSSortDescriptor"]
@@ -1072,6 +1193,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "controllerDidChangeContent"]
 - ["So30UIPasteConfigurationSupportingP", "controllerWillChangeContent"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "deselectRow"]
 - !private ["So30UIPasteConfigurationSupportingP", "emptyDataSetDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "emptyDataSetSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "fetchedProductsController"]
@@ -1086,6 +1208,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "product"]
 - !private ["So30UIPasteConfigurationSupportingP", "products"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1108,9 +1231,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewType"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So20UIPickerViewDelegateP", "product"]
+- !private ["So20UIPickerViewDelegateP", "viewType"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "CreateProductViewController"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSFetchRequest"]
@@ -1119,7 +1246,9 @@ depends-member:
 - !private ["So11UIResponderC", "NSSortDescriptor"]
 - ["So11UIResponderC", "Product"]
 - !private ["So11UIResponderC", "ProductTableViewCell"]
+- ["So11UIResponderC", "ProductViewType"]
 - ["So11UIResponderC", "UIBarButtonItem"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - ["So11UIResponderC", "UITableViewCellEditingStyle"]
@@ -1130,9 +1259,11 @@ depends-member:
 - ["So11UIResponderC", "controllerDidChangeContent"]
 - ["So11UIResponderC", "controllerWillChangeContent"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
+- !private ["So11UIResponderC", "deselectRow"]
 - !private ["So11UIResponderC", "emptyDataSetDelegate"]
 - !private ["So11UIResponderC", "emptyDataSetSource"]
 - ["So11UIResponderC", "fetchedProductsController"]
+- ["So11UIResponderC", "goToProductAs"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
@@ -1143,7 +1274,9 @@ depends-member:
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - !private ["So11UIResponderC", "performSegue"]
 - !private ["So11UIResponderC", "popViewController"]
+- ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "product"]
 - ["So11UIResponderC", "products"]
 - !private ["So11UIResponderC", "reloadData"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
@@ -1166,6 +1299,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So11UIResponderC", "viewType"]
 - ["So11UIResponderC", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "NSFetchedResultsController"]
 - !private ["So30UIResponderStandardEditActionsP", "NSSortDescriptor"]
@@ -1177,6 +1311,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "controllerDidChangeContent"]
 - ["So30UIResponderStandardEditActionsP", "controllerWillChangeContent"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
+- !private ["So30UIResponderStandardEditActionsP", "deselectRow"]
 - !private ["So30UIResponderStandardEditActionsP", "emptyDataSetDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "emptyDataSetSource"]
 - !private ["So30UIResponderStandardEditActionsP", "fetchedProductsController"]
@@ -1191,6 +1326,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "popViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "product"]
 - !private ["So30UIResponderStandardEditActionsP", "products"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1213,9 +1349,11 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "viewType"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "deselectRow"]
 - !private ["So12UIScrollViewC", "emptyDataSetDelegate"]
 - !private ["So12UIScrollViewC", "emptyDataSetSource"]
 - !private ["So12UIScrollViewC", "reloadData"]
@@ -1259,6 +1397,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "deselectRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "emptyDataSetDelegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "emptyDataSetSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
@@ -1284,6 +1423,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "performSegue"]
 - !private ["So16UIStateRestoringP", "popViewController"]
 - !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "product"]
 - !private ["So16UIStateRestoringP", "products"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
@@ -1304,9 +1444,12 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
+- !private ["So16UIStateRestoringP", "viewType"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So17UIStoryboardSegueC", "destination"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
+- !private ["So11UITableViewC", "deselectRow"]
 - !private ["So11UITableViewC", "emptyDataSetDelegate"]
 - !private ["So11UITableViewC", "emptyDataSetSource"]
 - !private ["So11UITableViewC", "reloadData"]
@@ -1400,6 +1543,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "controllerDidChangeContent"]
 - ["So18UITraitEnvironmentP", "controllerWillChangeContent"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UITraitEnvironmentP", "deselectRow"]
 - !private ["So18UITraitEnvironmentP", "emptyDataSetDelegate"]
 - !private ["So18UITraitEnvironmentP", "emptyDataSetSource"]
 - !private ["So18UITraitEnvironmentP", "fetchedProductsController"]
@@ -1414,6 +1558,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "popViewController"]
 - !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "product"]
 - !private ["So18UITraitEnvironmentP", "products"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1436,14 +1581,17 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
+- !private ["So18UITraitEnvironmentP", "viewType"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "deselectRow"]
 - !private ["So6UIViewC", "emptyDataSetDelegate"]
 - !private ["So6UIViewC", "emptyDataSetSource"]
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "setup"]
 - ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "CreateProductViewController"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSFetchRequest"]
@@ -1452,7 +1600,9 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSSortDescriptor"]
 - ["So16UIViewControllerC", "Product"]
 - !private ["So16UIViewControllerC", "ProductTableViewCell"]
+- ["So16UIViewControllerC", "ProductViewType"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", "UITableViewCellEditingStyle"]
@@ -1463,6 +1613,7 @@ depends-member:
 - ["So16UIViewControllerC", "controllerDidChangeContent"]
 - ["So16UIViewControllerC", "controllerWillChangeContent"]
 - ["So16UIViewControllerC", "fetchedProductsController"]
+- ["So16UIViewControllerC", "goToProductAs"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
@@ -1473,7 +1624,9 @@ depends-member:
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - !private ["So16UIViewControllerC", "performSegue"]
 - !private ["So16UIViewControllerC", "popViewController"]
+- ["So16UIViewControllerC", "prepare"]
 - !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "product"]
 - ["So16UIViewControllerC", "products"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1494,6 +1647,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
+- !private ["So16UIViewControllerC", "viewType"]
 - ["So16UIViewControllerC", "viewWillAppear"]
 - !private ["s14_ArrayProtocolP", "count"]
 - ["s14_ArrayProtocolP", "init"]
@@ -1502,7 +1656,9 @@ depends-member:
 - ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "deselectRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "emptyDataSetDelegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "emptyDataSetSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
@@ -1512,6 +1668,7 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
@@ -1537,6 +1694,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deselectRow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emptyDataSetDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "emptyDataSetSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchRequest"]
@@ -1555,6 +1714,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "products"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
@@ -1580,6 +1740,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s17_MutableIndexableP", "count"]
@@ -1588,6 +1749,9 @@ depends-member:
 - !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "create"]
+- !private ["s21_ObjectiveCBridgeableP", "edit"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -1598,17 +1762,20 @@ depends-member:
 - !private ["s26_RangeReplaceableIndexableP", "count"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s11_StrideableP", "hashValue"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
 - "10ComprasUSA18BaseViewControllerC"
 - "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
 - !private "Sb"
 - "10ComprasUSA21BuyListViewControllerC"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s10CollectionP"
 - !private "s10ComparableP"
+- !private "10ComprasUSA27CreateProductViewControllerC"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
@@ -1622,10 +1789,15 @@ depends-nominal:
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
+- !private "SQ"
 - !private "10Foundation9IndexPathV"
+- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "s17MutableCollectionP"
@@ -1648,13 +1820,18 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So16NSSortDescriptorC"
 - !private "So8NSStringC"
+- !private "s7NumericP"
 - "10ComprasUSA7ProductC"
 - !private "10ComprasUSA20ProductTableViewCellC"
+- "10ComprasUSA15ProductViewTypeO"
 - "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -1672,15 +1849,19 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So27UIGestureRecognizerDelegateP"
+- !private "So31UIImagePickerControllerDelegateP"
 - !private "So22UINavigationControllerC"
+- !private "So30UINavigationControllerDelegateP"
 - !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
+- !private "So20UIPickerViewDelegateP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So12UIScrollViewC"
 - "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
 - !private "So11UITableViewC"
 - !private "So15UITableViewCellC"
 - !private "SC27UITableViewCellEditingStyleO"
@@ -1691,10 +1872,12 @@ depends-nominal:
 - "So16UIViewControllerC"
 - "s14_ArrayProtocolP"
 - "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -1707,6 +1890,7 @@ depends-nominal:
 - "s21_ObjectiveCBridgeableP"
 - "s22_RandomAccessIndexableP"
 - "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1728,4 +1912,4 @@ depends-external:
 - "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers/EmptyDataSet-Swift-umbrella.h"
 - "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers/EmptyDataSet_Swift-Swift.h"
 - "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Modules/module.modulemap"
-interface-hash: "c3afab590fad73411868b3aaad16012e"
+interface-hash: "44ae032996fd6a7c96992d9b31b6da7c"

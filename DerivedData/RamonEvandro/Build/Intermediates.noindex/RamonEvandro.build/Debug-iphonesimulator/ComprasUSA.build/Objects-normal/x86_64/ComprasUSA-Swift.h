@@ -250,11 +250,14 @@ SWIFT_CLASS("_TtC10ComprasUSA21BuyListViewController")
 @end
 
 @class UITableViewCell;
+@class UIStoryboardSegue;
 
 @interface BuyListViewController (SWIFT_EXTENSION(ComprasUSA)) <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 @end
 
 
@@ -269,6 +272,7 @@ SWIFT_CLASS("_TtC10ComprasUSA23BuyTabBarViewController")
 @class UITextField;
 @class UIImageView;
 @class UISwitch;
+@class UIButton;
 @class UIImagePickerController;
 @class UIPickerView;
 @class State;
@@ -280,14 +284,17 @@ SWIFT_CLASS("_TtC10ComprasUSA27CreateProductViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified tfState;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified tfValue;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified swCard;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btProduct;
 @property (nonatomic, strong) UIImagePickerController * _Null_unspecified imagePicker;
 @property (nonatomic, strong) UIPickerView * _Null_unspecified pickerView;
 // 'fetchedStatesController' below
 @property (nonatomic, copy) NSArray<State *> * _Nonnull states;
+@property (nonatomic, strong) Product * _Nullable product;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)setupPickerView;
 - (void)donePicker;
+- (void)setupFields;
 - (void)getPicture;
 - (void)loadStates;
 - (IBAction)createProduct:(id _Nonnull)sender;
@@ -406,10 +413,22 @@ SWIFT_CLASS_NAMED("State")
 
 SWIFT_CLASS("_TtC10ComprasUSA19TotalViewController")
 @interface TotalViewController : BaseViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblTotalDolar;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblTotalReal;
+@property (nonatomic, strong) NSFetchedResultsController<Product *> * _Null_unspecified fetchedProductsController;
+@property (nonatomic, copy) NSArray<Product *> * _Nonnull products;
+@property (nonatomic) float totalDolar;
+@property (nonatomic) float totalReal;
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
+- (void)loadProducts;
+- (void)updateLabels;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface TotalViewController (SWIFT_EXTENSION(ComprasUSA)) <NSFetchedResultsControllerDelegate>
+- (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
 @end
 
 

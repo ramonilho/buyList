@@ -239,6 +239,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cadastrar Produto" id="m2O-zM-PQA"/>
                     <connections>
+                        <outlet property="btProduct" destination="qlq-6c-YNw" id="CkP-Fz-VET"/>
                         <outlet property="ivPicture" destination="eej-jS-7WT" id="9QS-FO-AsD"/>
                         <outlet property="swCard" destination="PrA-e7-CCb" id="jk7-VZ-QxT"/>
                         <outlet property="tfName" destination="kK7-6d-cDA" id="Vfs-jD-Q29"/>
@@ -445,13 +446,70 @@
                     <view key="view" contentMode="scaleToFill" id="97d-Vh-ioo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em U$:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-Ts-2Vt">
+                                <rect key="frame" x="56" y="73" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fhz-I8-f1G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1138.26" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIe-Me-jte">
+                                <rect key="frame" x="56" y="102" width="208" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Y3g-kg-nhx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em R$:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duH-Wh-5Yt">
+                                <rect key="frame" x="56" y="202" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3wz-Pr-nKO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3642.45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-4E-OFm">
+                                <rect key="frame" x="56" y="231" width="208" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="jg0-0R-URU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" red="0.078999921680000001" green="0.63195031879999997" blue="0.3989948928" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hIe-Me-jte" secondAttribute="trailing" constant="40" id="8uw-ZI-J5q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zct-Ts-2Vt" secondAttribute="trailing" constant="40" id="DH2-hd-j8w"/>
+                            <constraint firstItem="duH-Wh-5Yt" firstAttribute="top" secondItem="hIe-Me-jte" secondAttribute="bottom" constant="47" id="GM3-tx-tLS"/>
+                            <constraint firstItem="Zct-Ts-2Vt" firstAttribute="top" secondItem="xhI-Bi-ccv" secondAttribute="bottom" constant="53" id="I3M-9U-DYy"/>
+                            <constraint firstItem="duH-Wh-5Yt" firstAttribute="leading" secondItem="97d-Vh-ioo" secondAttribute="leadingMargin" constant="40" id="YUY-u8-NIp"/>
+                            <constraint firstItem="ZHW-4E-OFm" firstAttribute="leading" secondItem="97d-Vh-ioo" secondAttribute="leadingMargin" constant="40" id="bMz-JS-Lsp"/>
+                            <constraint firstItem="hIe-Me-jte" firstAttribute="top" secondItem="Zct-Ts-2Vt" secondAttribute="bottom" constant="8" id="bZa-aD-Y5k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="duH-Wh-5Yt" secondAttribute="trailing" constant="40" id="fRd-um-OWF"/>
+                            <constraint firstItem="hIe-Me-jte" firstAttribute="leading" secondItem="97d-Vh-ioo" secondAttribute="leadingMargin" constant="40" id="iKM-UF-050"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZHW-4E-OFm" secondAttribute="trailing" constant="40" id="k0b-Sb-SmB"/>
+                            <constraint firstItem="ZHW-4E-OFm" firstAttribute="top" secondItem="duH-Wh-5Yt" secondAttribute="bottom" constant="8" id="vKc-mO-6s2"/>
+                            <constraint firstItem="Zct-Ts-2Vt" firstAttribute="leading" secondItem="97d-Vh-ioo" secondAttribute="leadingMargin" constant="40" id="wf9-tI-wQ6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Total da compra" image="wallet" id="P4f-lQ-pz6"/>
+                    <connections>
+                        <outlet property="lblTotalDolar" destination="hIe-Me-jte" id="gap-eX-csZ"/>
+                        <outlet property="lblTotalReal" destination="ZHW-4E-OFm" id="ykL-Ea-xRg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfv-pe-nzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="1074"/>
+            <point key="canvasLocation" x="52.5" y="1073.2394366197184"/>
         </scene>
     </scenes>
     <resources>

@@ -9,12 +9,19 @@
 import CoreData
 import UIKit
 
+enum ProductViewType {
+    case create
+    case edit
+}
+
 class BuyListViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     var fetchedProductsController: NSFetchedResultsController<Product>!
     var products: [Product] = [Product]()
+    
+    var goToProductAs: ProductViewType = .create
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +91,23 @@ extension BuyListViewController : UITableViewDelegate, UITableViewDataSource {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "createProduct", sender: products[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dvc = segue.destination as? CreateProductViewController {
+            if let product = sender as? Product {
+                dvc.viewType = .edit
+                dvc.product = product
+            } else {
+                dvc.viewType = .create
+            }
+        }
+        
     }
     
 }
