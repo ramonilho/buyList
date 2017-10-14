@@ -32,9 +32,17 @@ class ProductTableViewCell: UITableViewCell {
         lblProductName.text = product.name
         lblStateName.text = product.state?.name
         lblValue.text = String(format: "U$ %.2f", product.value)
-        
-        ivPhoto.image = UIImage(data: product.image! as Data)
         ivCardIcon.isHidden = !product.usedCard
+        
+        DispatchQueue.global().async {
+            if let imgData = product.image as Data? {
+                let img = UIImage(data: imgData)
+                DispatchQueue.main.async {
+                    self.ivPhoto.image = img
+                }
+            }
+        }
+        
         
     }
     

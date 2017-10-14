@@ -56,7 +56,7 @@ class TotalViewController: BaseViewController {
             totalReal += p.value * dolarTax
             
             if p.usedCard {
-                totalReal += p.value * p.state!.tax
+                totalReal += p.value * (p.state!.tax/100)
             }
             
         }

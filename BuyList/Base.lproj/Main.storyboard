@@ -237,7 +237,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="zSZ-1B-pfi" secondAttribute="trailing" id="zIh-Tk-WNG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Cadastrar Produto" id="m2O-zM-PQA"/>
+                    <navigationItem key="navigationItem" title="Cadastrar Produto" largeTitleDisplayMode="never" id="m2O-zM-PQA"/>
                     <connections>
                         <outlet property="btProduct" destination="qlq-6c-YNw" id="CkP-Fz-VET"/>
                         <outlet property="ivPicture" destination="eej-jS-7WT" id="9QS-FO-AsD"/>
@@ -381,6 +381,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zDN-KE-Dv5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>

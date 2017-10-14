@@ -6,14 +6,17 @@ provides-member:
 - ["10ComprasUSA7ProductC", "fetchRequest"]
 - ["10ComprasUSA7ProductC", "image"]
 - ["10ComprasUSA7ProductC", "name"]
+- ["10ComprasUSA7ProductC", "usedCard"]
 - ["10ComprasUSA7ProductC", "value"]
 - ["10ComprasUSA7ProductC", "state"]
 provides-dynamic-lookup:
 - "image"
 - "name"
 - "state"
+- "usedCard"
 - "value"
 depends-top-level:
+- "Bool"
 - "Float"
 - "NSData"
 - "NSFetchRequest"
@@ -50,6 +53,7 @@ depends-member:
 - !private ["So20NSFetchRequestResultP", "NSFetchRequest"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- ["So15NSManagedObjectC", "Bool"]
 - ["So15NSManagedObjectC", "Float"]
 - ["So15NSManagedObjectC", "NSData"]
 - ["So15NSManagedObjectC", "NSFetchRequest"]
@@ -60,8 +64,10 @@ depends-member:
 - ["So15NSManagedObjectC", "image"]
 - ["So15NSManagedObjectC", "name"]
 - ["So15NSManagedObjectC", "state"]
+- ["So15NSManagedObjectC", "usedCard"]
 - ["So15NSManagedObjectC", "value"]
 - !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Float"]
 - ["So8NSObjectC", "NSData"]
 - ["So8NSObjectC", "NSFetchRequest"]
@@ -72,11 +78,13 @@ depends-member:
 - ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "name"]
 - ["So8NSObjectC", "state"]
+- ["So8NSObjectC", "usedCard"]
 - ["So8NSObjectC", "value"]
 - !private ["So16NSObjectProtocolP", "NSFetchRequest"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- ["10ComprasUSA7ProductC", "Bool"]
 - ["10ComprasUSA7ProductC", "Float"]
 - ["10ComprasUSA7ProductC", "NSData"]
 - ["10ComprasUSA7ProductC", "NSFetchRequest"]
@@ -88,6 +96,7 @@ depends-member:
 - ["10ComprasUSA7ProductC", "image"]
 - ["10ComprasUSA7ProductC", "name"]
 - ["10ComprasUSA7ProductC", "state"]
+- ["10ComprasUSA7ProductC", "usedCard"]
 - ["10ComprasUSA7ProductC", "value"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
@@ -179,4 +188,4 @@ depends-external:
 - "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers/EmptyDataSet-Swift-umbrella.h"
 - "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers/EmptyDataSet_Swift-Swift.h"
 - "/Users/ramonhonorio/workspace/ios/fiap/BuyList/DerivedData/RamonEvandro/Build/Products/Debug-iphonesimulator/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Modules/module.modulemap"
-interface-hash: "123dcfd95a56a31d69f9d2da3ff71fa1"
+interface-hash: "ebbdc6010b512707360a949919a12937"
